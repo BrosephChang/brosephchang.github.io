@@ -1,0 +1,62 @@
+
+h1 {
+  font-family: "Comic Sans MS";
+  color: lightblue;
+  text-align: right;
+}
+
+p {
+  font-family:"Comic Sans MS";
+  font-size: 350px;
+  text-align: center;
+}
+
+img {
+size: 100;
+}
+
+body {
+  background-image: url("https://lh3.googleusercontent.com/Ygptq2rms6dqiPR0oKz2Z59HBh0sD0j7RD7moE-0PN9tpCI50Yt4MEn0II5cT9IyI5DZKG6Sw0VUjFNb3V3BO8BBK_aaudzpCGBYmzbHqVKZQUCJrL-01nvN5qi4njcEKJzzhXDqCnd6Gfd_Kjt99sb737X3rAmJ8XPZFWD7da-sV6V3bVWKRIxd_eFR73sxXPSHlIUvOt2S00M__q8rR8YF1c8eA6HnX1oDYc9esBFo1IIfGN7ehaTbhzxCd1Zwi-u_wms_Y5daPw4YU62dYxp7RljUB6m8R2EfuAzk-cyWP4SMFqd_VYiDzKuWCd0eMszjUstH4pV8P1-PdgVvWAWb-iYGy4l9zrvTtBfDEESNP9KqTWGElisBFVoX1oMwWtJYyaNG6Tvc_T2z_GtVbjHSXH_W9zrHh_dfGWwUsDaJxFtBFpa0b9wSyfau17Bvol6pChm7BjidRdZ3b9lvD09SD5xOCykYqtT_HvtAxwOgSB-6muKcga7iiHkAiuXy4VpnSZDEKAjEo7xwkiOFDfVoSL71FpQylApS92WUcObVuK8NkRY4DY5-65J3fMYXTzslSsh6MEuoTbU84-LXlEN2XViFD90J9CNTrPbl9WoaTqehiPmEGO8snQiGjyjdgTrcbC0WTL6iO1tDUcl-4hX02hmfq5jb3N7LB6VUTP4XuI8mJYyEZfO9KQ9CIQU860ac4grxGEmkFYhrnKVZqugi=w360-h491-no");
+}
+.header {
+  text-align: center;
+  padding: 1px;
+}
+
+audio
+{
+  height: 2;
+  align: center;
+}
+story = {
+  classes: {
+      text3d: {
+        position: {z:3},
+        font: 30,
+        color: "#456",
+        textShadow: [0.5,0.5,2,"rgba(0,0,0,0.5)"]
+      }
+  },
+  item: {
+      itemType: "layer",
+      init: {
+        size: [50,40],
+        bg: "rgba(255,255,127,0.7)",
+        corners: true,
+        shadow: [0.5,0.5,2,"rgba(0,0,0,0.5)"]
+      },
+      scripts: [
+          { action: {delay:1, anim:10, rot:{x:540}}},
+          { action: {delay:0.5, anim:[12,"bounce"], rot:{y:540}}},
+          { action: {anim:11, rot:{z:-540}}}
+      ],
+      items: [{
+        text:"In 3D!",
+        init: {class:"text3d", pos:{z:4}}
+      },
+      {
+        text:"In 3D!",
+        init: {class:"text3d", pos:{z:-4}}
+      }]
+  }
+};
